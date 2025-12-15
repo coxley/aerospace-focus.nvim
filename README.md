@@ -1,8 +1,9 @@
 # aerospace-focus.nvim
 
-Seamlessly navigate between Neovim and AeroSpace windows using the same keybinds. I was
-tired of jumbling contextual controls for split navigation, especially on macOS where
-there are fewer vacant combinations to override.
+Seamlessly navigate between Neovim and
+[AeroSpace](https://github.com/nikitabobko/AeroSpace) windows using the same keybinds.
+I was tired of jumbling contextual controls for split navigation, especially on macOS
+where there are fewer vacant combinations to override.
 
 This plugin was inspired by [zellij.vim](https://github.com/fresh2dev/zellij.vim).
 Similar to that plugin, it requires configuring both Neovim and Aerospace to work

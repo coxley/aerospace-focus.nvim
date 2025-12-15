@@ -67,7 +67,7 @@ function M.blur()
 end
 
 function M.setup(opts)
-    if opts.extra_argv then
+    if opts and opts.extra_argv then
         for _, v in ipairs(opts.extra_argv) do
             table.insert(extra_argv, v)
         end

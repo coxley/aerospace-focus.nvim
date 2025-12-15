@@ -14,7 +14,7 @@ Examples are for `lazy.nvim`, but should be similar for your favorite package ma
 Choose the bindings that work best for you; these are simply my preferences.
 
 > [!NOTE]
-> To use `CTRL-l` seamless, you'll need to configure your terminal emulator to use
+> To use `CTRL-l` seamlessly, you'll need to configure your terminal emulator to use
 > another sequence for clearing the screen. I use `keybind = cmd+l=text:\x0C` in
 > Ghostty.
 > 

@@ -25,15 +25,16 @@ Choose the bindings that work best for you; these are simply my preferences.
 return {
     {
         'coxley/aerospace-focus.nvim',
-        -- Required when sharing the same keybinds as aerospace, as it will swallow the
-        -- keypress before lazy.nvim has a chance to load the plugin.
-        lazy = false, 
+        opts = {},
         keys = {
             { "<C-h>", ":AeroSpaceFocus left<CR>",  noremap = true, silent = true },
             { "<C-j>", ":AeroSpaceFocus down<CR>",  noremap = true, silent = true },
             { "<C-k>", ":AeroSpaceFocus up<CR>",    noremap = true, silent = true },
             { "<C-l>", ":AeroSpaceFocus right<CR>", noremap = true, silent = true },
         },
+        -- Required when sharing the same keybinds as aerospace, as it will swallow the
+        -- keypress before lazy.nvim has a chance to load the plugin.
+        lazy = false, 
     }
 }
 ```
@@ -44,7 +45,6 @@ Additional arguments can be passed through to `aerospace focus`:
 return {
     {
         'coxley/aerospace-focus.nvim',
-        lazy = false,
         opts = {
             extra_argv = {
                 '--boundaries-action',
@@ -57,6 +57,7 @@ return {
             { "<C-k>", ":AeroSpaceFocus up<CR>",    noremap = true, silent = true },
             { "<C-l>", ":AeroSpaceFocus right<CR>", noremap = true, silent = true },
         },
+        lazy = false,
     }
 }
 ```

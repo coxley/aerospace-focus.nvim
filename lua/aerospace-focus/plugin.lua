@@ -83,12 +83,13 @@ function M.setup(opts)
 
 DIRECTION=$1
 LOCK="%s"
+
 if [ -f "$LOCK" ]; then
-SOCK=$(cat "$LOCK")
-echo "lua local chan = vim.fn.sockconnect('pipe', '$SOCK', { rpc = true }); vim.fn.rpcrequest(chan, 'nvim_command', 'AeroSpaceFocus $DIRECTION')" \
-    | nvim -u NORC -es
+    SOCK=$(cat "$LOCK")
+    echo "lua local chan = vim.fn.sockconnect('pipe', '$SOCK', { rpc = true }); vim.fn.rpcrequest(chan, 'nvim_command', 'AeroSpaceFocus $DIRECTION')" \
+        | nvim -u NORC -es
 else
-aerospace focus $DIRECTION %s
+    aerospace focus $DIRECTION %s
 fi
 ]], utils.lock_file(), table.concat(extra_argv, " ")))
 

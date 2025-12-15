@@ -23,7 +23,7 @@ Choose the bindings that work best for you; these are simply my preferences.
 ```lua
 return {
     {
-        'github.com/coxley/aerospace-focus.nvim',
+        'coxley/aerospace-focus.nvim',
         -- Required when sharing the same keybinds as aerospace, as it will swallow the
         -- keypress before lazy.nvim has a chance to load the plugin.
         lazy = false, 
@@ -42,7 +42,7 @@ Additional arguments can be passed through to `aerospace focus`:
 ```lua
 return {
     {
-        'github.com/coxley/aerospace-focus.nvim',
+        'coxley/aerospace-focus.nvim',
         lazy = false,
         opts = {
             extra_argv = {
